@@ -50,19 +50,22 @@ body {
     text-align: center;
 }
 #animate {
+    display: none;
     position: absolute;
     width: 25px;
     height: 25px;
     background-color: white;
     border-radius: 50%;
     animation-name: turnaround;
-    animation-duration: 8s;
+    animation-duration: 15s;
     z-index: 1000;
+    opacity: 0;
 }
 @keyframes turnaround {
-    0%   {background-color:white; left:0; top:0;}
-    25%  {background-color:white; left:100%; top:0%;}
-    50%  {background-color:white; left:100%; top:105%;}
-    75%  {background-color:white; left:0; top:105%;}
-    100% {background-color:white; left:0; top:0;}
+    0%   {opacity: 1; background-color:white; left:75px; top:-20%;}
+    25%  {opacity: 1; background-color:white; left:calc(100% - 110px); top:-20%;}
+    50%  {opacity: 1; background-color:white; left:calc(100% - 110px); top:105%;}
+    75%  {opacity: 1; background-color:white; left:75px; top:105%;}
+    99% {opacity: 1; background-color:white; left:75px; top:0;}
+    100% {opacity: 0;}
 }  
