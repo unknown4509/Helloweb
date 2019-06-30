@@ -69,3 +69,19 @@ body {
     99% {opacity: 1; background-color:white; left:75px; top:0;}
     100% {opacity: 0;}
 }  
+#bod {
+    padding: 10;
+    font-size:50;
+    text-align: center;
+    border: 5px;
+    color :white;
+    outline:none;
+}
+#h-4 {
+    padding: 10;
+    font-size:200;
+    text-align: center;
+    border: 5px;
+    color :white;
+    outline:none;
+}
